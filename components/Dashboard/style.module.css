@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  max-height: 68vh;
+  max-height: 68dvh;
+  padding-inline-end: 10px;
+  overflow-y: auto;
+}
+
+.dashboardEmptyButton {
+  border: 2px solid var(--mantine-primary-color-filled);
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 16px;
+  word-wrap: break-word;
+  flex: 1 0 40%;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (hover:hover) {
+    &:hover {
+      background-color: light-dark(#f9f9f9, #2f2f2f);
+    }
+  }
+
+  /* Regla para estilar pantallas mayores de 768px */
+  @media screen and (min-width: 800px) {
+    flex: 1 0 23%;
+  }
+}

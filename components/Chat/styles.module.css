@@ -1,0 +1,35 @@
+.formContainer {
+  position: absolute;
+  padding-inline: 20px;
+  width: 97%;
+  bottom: 7px;
+  max-width: 1140px;
+}
+
+.textArea textarea {
+  max-height: 140px;
+  field-sizing: content;
+  padding-inline: 70px;
+}
+
+.submitButton {
+  position: absolute;
+  right: 40px;
+  bottom: 14px;
+  background-color: var(--mantine-primary-color-filled);
+
+  &:not(.loading) {
+    &:disabled,
+    &[data-disabled] {
+      border-color: light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+      background-color: transparent;
+    }
+  }
+}
+
+.popoverButton {
+  position: absolute;
+  left: 40px;
+  bottom: 14px;
+  z-index: 10;
+}
